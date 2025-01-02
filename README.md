@@ -49,7 +49,7 @@ For machine learning projects, AutoProfile helps you understand which features m
 First, install AutoProfile using pip:
 
 ```bash
-pip install auto-profile
+pip install autoprofile
 ```
 
 The package requires several common data science libraries:
@@ -64,7 +64,7 @@ Here's a simple example to get you started:
 
 ```python
 import pandas as pd
-from auto_profile import AutoProfile
+from autoprofile import AutoProfile
 
 # Load your dataset
 data = pd.read_csv('your_dataset.csv')
