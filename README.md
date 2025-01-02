@@ -1,14 +1,14 @@
-# AutoProfile
+# Data-Auto-Profiler
 
-AutoProfile is a powerful Python package designed to streamline the data analysis process by automatically generating comprehensive insights about your datasets. Whether you're a data scientist looking to quickly understand a new dataset or an analyst preparing a detailed data quality report, AutoProfile provides the tools you need to uncover meaningful patterns and potential issues in your data.
+Data-Auto-Profiler is a powerful Python package designed to streamline the data analysis process by automatically generating comprehensive insights about your datasets. Whether you're a data scientist looking to quickly understand a new dataset or an analyst preparing a detailed data quality report, Data-Auto-Profiler provides the tools you need to uncover meaningful patterns and potential issues in your data.
 
-## Understanding AutoProfile's Core Features
+## Understanding Data-Auto-Profiler's Core Features
 
-AutoProfile excels at four key areas of data analysis:
+Data-Auto-Profiler excels at four key areas of data analysis:
 
 ### Data Quality Assessment
 
-At its heart, AutoProfile helps you understand the reliability and completeness of your data. The package automatically evaluates your dataset for common quality issues by:
+At its heart, Data-Auto-Profiler helps you understand the reliability and completeness of your data. The package automatically evaluates your dataset for common quality issues by:
 
 - Calculating an overall completeness score that tells you at a glance how much of your data is actually usable
 - Identifying missing values and their patterns across different features
@@ -18,7 +18,7 @@ At its heart, AutoProfile helps you understand the reliability and completeness 
 
 ### Statistical Analysis
 
-AutoProfile performs a thorough statistical examination of your data, helping you understand the underlying distributions and characteristics of each feature. This includes:
+Data-Auto-Profiler performs a thorough statistical examination of your data, helping you understand the underlying distributions and characteristics of each feature. This includes:
 
 - Computing essential descriptive statistics like mean, median, and standard deviation
 - Analyzing the shape of your data distributions through skewness and kurtosis measurements
@@ -27,7 +27,7 @@ AutoProfile performs a thorough statistical examination of your data, helping yo
 
 ### Feature Relationships
 
-Understanding how different features relate to each other is crucial for any data analysis project. AutoProfile provides several methods to explore these relationships:
+Understanding how different features relate to each other is crucial for any data analysis project. Data-Auto-Profiler provides several methods to explore these relationships:
 
 - Calculating Pearson correlations between numerical features to identify linear relationships
 - Using Cramér's V analysis to understand associations between categorical variables
@@ -36,20 +36,20 @@ Understanding how different features relate to each other is crucial for any dat
 
 ### Predictive Power Assessment
 
-For machine learning projects, AutoProfile helps you understand which features might be most useful through:
+For machine learning projects, Data-Auto-Profiler helps you understand which features might be most useful through:
 
 - Information Value (IV) calculations that measure each feature's predictive strength
 - Feature importance rankings that help you prioritize which variables to focus on
 - Detailed analysis of how each feature relates to your target variable
 
-## Getting Started with AutoProfile
+## Getting Started with Data-Auto-Profiler
 
 ### Installation
 
-First, install AutoProfile using pip:
+First, install Data-Auto-Profiler using pip:
 
 ```bash
-pip install autoprofile
+pip install data-auto-profiler
 ```
 
 The package requires several common data science libraries:
@@ -64,13 +64,13 @@ Here's a simple example to get you started:
 
 ```python
 import pandas as pd
-from autoprofile import AutoProfile
+from data_auto_profiler import AutoProfile
 
 # Load your dataset
 data = pd.read_csv('your_dataset.csv')
 
-# Create an AutoProfile instance
-# The target_column parameter tells AutoProfile which variable you're trying to predict
+# Create an Data-Auto-Profiler instance
+# The target_column parameter tells Data-Auto-Profiler which variable you're trying to predict
 profiler = AutoProfile(data=data, target_column='target')
 
 ```
@@ -153,7 +153,7 @@ This analysis generates an autodistribution plot for the specified column, provi
 
 ## Important Considerations
 
-When using AutoProfile, keep these points in mind:
+When using Data-Auto-Profiler, keep these points in mind:
 
 1. Memory Usage: The pairplot analysis can be memory-intensive for large datasets with many features. Consider using it selectively on smaller feature sets.
 
@@ -161,7 +161,7 @@ When using AutoProfile, keep these points in mind:
 
 3. Target Variable Requirements: For certain analyses like Information Value calculations, your target variable must be numeric.
 
-4. Missing Value Handling: While AutoProfile handles missing values automatically, their presence may affect certain statistical calculations.
+4. Missing Value Handling: While Data-Auto-Profiler handles missing values automatically, their presence may affect certain statistical calculations.
 
 
 ## 📋 Requirements
@@ -174,9 +174,9 @@ When using AutoProfile, keep these points in mind:
 
 
 
-## Contributing to AutoProfile
+## Contributing to Data-Auto-Profiler
 
-We welcome contributions from the community! If you'd like to improve AutoProfile:
+We welcome contributions from the community! If you'd like to improve Data-Auto-Profiler:
 
 1. Fork the repository
 2. Create a new branch for your feature
@@ -194,7 +194,7 @@ For significant changes, please open an issue first to discuss your proposed mod
 
 ## License
 
-AutoProfile is available under the MIT License, allowing for both personal and commercial use with proper attribution.
+Data-Auto-Profiler is available under the MIT License, allowing for both personal and commercial use with proper attribution.
 
 ## 📞 Support
 

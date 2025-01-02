@@ -9,7 +9,8 @@ setup(
         "pandas>=2.2.2",
         "numpy>=1.26.4",
         "plotly>=5.22.0",
-        "scipy>=1.13.1"
+        "scipy>=1.13.1",
+        "nbformat>=4.2.0"
     ],
     python_requires=">=3.8"
 )
